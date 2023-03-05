@@ -26,8 +26,7 @@ sd.write(str(sortData)+ "\n")
 sd2 = open("Sxyz.txt", "r").read().split()
 
 while i < len(sortData):
-    n=0
-    adData.append(((float(sortData[i][0]))+89)*150-1500)
+    adData.append(((float(sortData[i][n]))+89)*150-1500)
     i+=1
 
         
