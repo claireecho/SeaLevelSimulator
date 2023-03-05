@@ -5,7 +5,6 @@ sd = open("Sxyz.txt", "w")
 sortData = []
 file=''
 i=0
-#d.remove(",")
 
 # Adding text to a 2D array
 while i< len(d):
