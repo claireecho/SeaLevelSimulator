@@ -5,15 +5,22 @@ sd = open("Sxyz.txt", "w")
 sortData = []
 adData = []
 i=0
-while i< len(d)/1000:
+#d.remove(",")
+while i< len(d):
     temp = []
     for j in range(3):
         temp.append(float(d[i]))
         i+=1
     sortData.append(temp)
-    
+#print(sortData)
 
-print(sortData)
+for i in range(len(sortData)):
+    for j in range(i, len(sortData)):
+        if sortData[i][2] > sortData[j][2]:
+            temp = sortData[i]
+            sortData[i] = sortData[j]
+            sortData[j] = temp
+
 n=0
 while i < len(sortData):
     if n==0:
@@ -22,7 +29,5 @@ while i < len(sortData):
     else:
         adData.append(((float(sortData[i]))-30)*-150+1450)
         n=0
-sd.write(str((Sort(sortData)))+ "\n")
-
-
+sd.write(str(sortData)+ "\n")
     
