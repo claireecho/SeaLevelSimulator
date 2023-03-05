@@ -4,6 +4,7 @@ d= h.split()
 sd = open("Sxyz.txt", "w")
 sortData = []
 file=''
+adData = []
 i=0
 
 # Adding text to a 2D array
@@ -22,6 +23,11 @@ for i in range(len(sortData)):
             sortData[i] = sortData[j]
             sortData[j] = temp
 
-
-sd.write(str(sortData)+ "\n")
+# Adjusts Coordinates
+n = 0
+for i in range(len(sortData)):
+    adData.append([(sortData[i][0]+89)*150-1500,
+                   (sortData[i][1]-30)*-150+1450,
+                   sortData[i][2]])
+sd.write(str(adData)+ "\n")
     
