@@ -2,22 +2,24 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 global canvas
-w,h=740,480
+w,h=640,480
 jerome = open("vaANDmd.txt", "r").read()
 i = 0
 n=0
 mensa = jerome.split()
 rat = []
-f = open("Axyz.txt", "r").read().split()
+f = open("mid100.txt", "r").read().split()
 root=Tk()
-canvas = Canvas(root,width=w,height=h,bg='blue')
+canvas = Canvas(root,width=w,height=h,bg='palegreen4')
 def plotPoints():
+
    u=0
    while u < len(f):
       if float(f[u+2]) < 0:
-         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
-                                 float(f[u+1])+7, fill="blue",
-                                 outline="blue")
+         if float(f[u])>169.43700000000058:
+            canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
+                                    float(f[u+1])+7, fill="blue",
+                                    outline="blue")
       elif float(f[u+2])<50:
          canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen4",
