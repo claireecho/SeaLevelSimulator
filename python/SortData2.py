@@ -30,7 +30,7 @@ sd2 = open("Sxyz.txt", "r").read().split()
 
 for i in range(len(sortData)):
     adData.append([(sortData[i][0]+89)*150-1500,
-                   (sortData[i][1]-30)*-150+1440, sortData[i][2]])
+                   (sortData[i][1]-30)*-150+1450, sortData[i][2]])
     file += str(adData[i][0]) + " " + str(adData[i][1]) + " " + str(adData[i][2]) + "\n"
 
         
