@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body {
+background-color: #8fbaff;
+border: 2px solid Gray;
+border-radius: 5px;
+font-family: 'Cabin', sans-serif;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+min-width: 256px;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 20px;
+padding-right: 24px;
+}
+
+html {
+background-image: url('https://i.imgur.com/WLtJjYU.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+nav ul {
+text-align: center;
+list-style-type: none;
+background-color: #8fbaff;
+border: 2px solid #111111;
+border-radius: 5px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Cabin', sans-serif;
+font-weight: bold;
+padding: 12px;
+}
+nav ul li {
+display: inline-block;
+border-right: 2px solid #111111;
+padding-right: 16px;
+padding-left: 12px;
+}
+nav ul li:last-child {
+border-right: none;
+}
+nav ul li a {
+text-decoration: none;
+color: #111111;
+}
+
+nav li.selected {
+color: #111111;
+text-decoration: underline;
+}
+nav li a:hover {
+text-decoration: underline;
+}
+
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  background: #dbe8ff;
+  outline: none;
+  opacity: 0.85;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1f5abf;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1f5abf;
+  cursor: pointer;
+}
