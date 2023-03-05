@@ -24,3 +24,17 @@ for i in range(len(sortData)):
 
 sd.write(str(sortData)+ "\n")
     
+
+print(sortData)
+n=0
+while i < len(sortData):
+    if n==0:
+        adData.append(((float(sortData[i]))+89)*150-1500)
+        n=1
+    else:
+        adData.append(((float(sortData[i]))-30)*-150+1450)
+        n=0
+sd.write(str((Sort(sortData)))+ "\n")
+
+
+    
