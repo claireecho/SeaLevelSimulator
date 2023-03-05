@@ -96,3 +96,31 @@ text-decoration: underline;
   background: #1f5abf;
   cursor: pointer;
 }
+
+navx ul {
+list-style-type: none;
+background-color: #8fbaff;
+font-family: 'Cabin', sans-serif;
+font-weight: bold;
+padding: 1px;
+padding-left: 25px;
+}
+navx ul li {
+padding-right: 16px;
+padding-left: 12px;
+}
+navx ul li:last-child {
+border-right: none;
+}
+navx ul li a {
+text-decoration: none;
+color: #111111;
+}
+
+navx li.selected {
+color: #111111;
+text-decoration: underline;
+}
+navx li a:hover {
+text-decoration: underline;
+}
