@@ -4,6 +4,7 @@ d= h.split()
 sd = open("Sxyz.txt", "w")
 sortData = []
 adData = []
+files = ''
 i=0
 
 # Implement text into 2D array
@@ -24,11 +25,12 @@ for i in range(len(sortData)):
 
 # Converting sorted data into appropriate coordinates
 for i in range(len(sortData)):
-    adData.append([(sortData[i][0]+89)*150-1500,
-                   (sortData[i][1]-30)*-150+1450,
-                   sortData[i][2]])
+#    adData.append([(sortData[i][0]+89)*150-1500,
+ #                  (sortData[i][1]-30)*-150+1450,
+  #                 sortData[i][2]])
+    files += str(sortData[i][0]) + " " + str(sortData[i][1]) + " " + str(sortData[i][2]) + "\n"
 
 
 # Writing into separate files
-sd.write(str(adData)+ "\n")
+sd.write(files)
     
