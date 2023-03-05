@@ -2,13 +2,13 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 global canvas
-w,h=740,480
+w,h=640,480
 jerome = open("vaANDmd.txt", "r").read()
 i = 0
 n=0
 mensa = jerome.split()
 rat = []
-f = open("Axyz.txt", "r").read().split()
+f = open("max100.txt", "r").read().split()
 root=Tk()
 canvas = Canvas(root,width=w,height=h,bg='blue')
 def plotPoints():
@@ -18,32 +18,32 @@ def plotPoints():
          canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
                                  float(f[u+1])+7, fill="blue",
                                  outline="blue")
-      elif float(f[u+2])<50:
+      elif float(f[u+2])<49:
          canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen4",
                                  outline="palegreen4")
-      elif float(f[u+2])<100:
+      elif float(f[u+2])<99:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen3",
                                  outline="palegreen3")
-      elif float(f[u+2])<200:
+      elif float(f[u+2])<199:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen2",
                                  outline="palegreen2")
          
-      elif float(f[u+2])<300:
+      elif float(f[u+2])<299:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen1",
                                  outline="palegreen1")
-      elif float(f[u+2])<400:
+      elif float(f[u+2])<399:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen",
                                  outline="palegreen")
-      elif float(f[u+2])<600:
+      elif float(f[u+2])<700:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegoldenrod",
