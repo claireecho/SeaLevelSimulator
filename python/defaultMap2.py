@@ -8,7 +8,7 @@ i = 0
 n=0
 mensa = jerome.split()
 rat = []
-f = open("Axyz.txt", "r").read().split()
+f = open("mid100.txt", "r").read().split()
 root=Tk()
 canvas = Canvas(root,width=w,height=h,bg='palegreen4')
 def plotPoints():
