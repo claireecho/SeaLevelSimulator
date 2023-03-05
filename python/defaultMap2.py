@@ -11,8 +11,48 @@ rat = []
 f = open("Axyz.txt", "r").read().split()
 root=Tk()
 canvas = Canvas(root,width=w,height=h,bg='blue')
+def plotPoints():
+   u=0
+   while u < len(f):
+      if float(f[u+2]) < 0:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
+                                 float(f[u+1])+7, fill="blue",
+                                 outline="blue")
+      elif float(f[u+2])<50:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegreen4",
+                                 outline="palegreen4")
+      elif float(f[u+2])<100:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]),
+                                 float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegreen3",
+                                 outline="palegreen3")
+      elif float(f[u+2])<200:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]),
+                                 float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegreen2",
+                                 outline="palegreen2")
+         
+      elif float(f[u+2])<300:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]),
+                                 float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegreen1",
+                                 outline="palegreen1")
+      elif float(f[u+2])<400:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]),
+                                 float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegreen",
+                                 outline="palegreen")
+      elif float(f[u+2])<700:
+         canvas.create_rectangle(float(f[u]), float(f[u+1]),
+                                 float(f[u])+7,
+                                 float(f[u+1])+7, fill="palegoldenrod",
+                                 outline="palegoldenrod")
+      u+=3
+plotPoints()
+
 def makeAlabamaGA():
-   canvas.create_polygon(rat, f="yellow", outline="#023020", width=1)
+   canvas.create_polygon(rat, fill= '', outline="black", width=1)
    
 while i < len(mensa):
    try: 
@@ -20,7 +60,7 @@ while i < len(mensa):
          rat.append(((float(mensa[i]))+89)*150-1500)
          n=1
       else:
-         rat.append(((float(mensa[i]))-30)*-150+1450)
+         rat.append(((float(mensa[i]))-30)*-150+1440)
          n=0
    except ValueError:
       if mensa[i]=='END_ONE_POLY':
@@ -32,13 +72,6 @@ while i < len(mensa):
          break
    i+=1
    
-def plotPoints():
-   u=0
-   while u < len(f):
-     # if float(f[u+2]) < 0:
-      canvas.create_rectangle(f[u], f[u+1], f[u], f[u+1], f="green")
-      u+=3
-plotPoints()
 
 
 canvas.pack()
