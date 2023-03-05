@@ -15,9 +15,10 @@ def plotPoints():
    u=0
    while u < len(f):
       if float(f[u+2]) < 0:
-         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
-                                 float(f[u+1])+7, fill="blue",
-                                 outline="blue")
+         if float(f[u])<169.43700000000058:
+            canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
+                                    float(f[u+1])+7, fill="blue",
+                                    outline="blue")
       elif float(f[u+2])<50:
          canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen4",
@@ -48,6 +49,7 @@ def plotPoints():
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegoldenrod",
                                  outline="palegoldenrod")
+      
       u+=3
 plotPoints()
 
