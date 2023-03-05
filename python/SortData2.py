@@ -31,6 +31,6 @@ while i < len(sortData):
     i+=1
 
         
-ad.write(adData)
+ad.write(str(adData) + "\n")
 
     
