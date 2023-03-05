@@ -3,25 +3,18 @@ h = open("xyz.txt", "r").read()
 d= h.split()
 sd = open("Sxyz.txt", "w")
 sortData = []
-<<<<<<< HEAD
-<<<<<<< HEAD
 adData = []
-=======
-file=''
->>>>>>> parent of ffd04e5 (ur mom)
-=======
-file=''
->>>>>>> parent of ffd04e5 (ur mom)
 i=0
-#d.remove(",")
+
+# Implement text into 2D array
 while i< len(d):
     temp = []
     for j in range(3):
         temp.append(float(d[i]))
         i+=1
     sortData.append(temp)
-#print(sortData)
 
+# Sort the 2D array using index 2
 for i in range(len(sortData)):
     for j in range(i, len(sortData)):
         if sortData[i][2] > sortData[j][2]:
@@ -29,21 +22,11 @@ for i in range(len(sortData)):
             sortData[i] = sortData[j]
             sortData[j] = temp
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-n=0
-while i < len(sortData):
-    if n==0:
-        adData.append(((float(sortData[i]))+89)*150-1500)
-        n=1
-    else:
-        adData.append(((float(sortData[i]))-30)*-150+1450)
-        n=0
-=======
+# Converting sorted data into appropriate coordinates
+for i in range(len(sortData)):
+    adData.append([(sortData[i][0]+89)*150-1500, (sortData[i][1]-30)*-150+1450, sortData[i][2]])
 
->>>>>>> parent of ffd04e5 (ur mom)
-=======
 
->>>>>>> parent of ffd04e5 (ur mom)
-sd.write(str(sortData)+ "\n")
+# Writing into separate files
+sd.write(str(adData)+ "\n")
     
