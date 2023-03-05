@@ -4,7 +4,11 @@ d= h.split()
 sd = open("Sxyz.txt", "w")
 sortData = []
 <<<<<<< HEAD
+<<<<<<< HEAD
 adData = []
+=======
+file=''
+>>>>>>> parent of ffd04e5 (ur mom)
 =======
 file=''
 >>>>>>> parent of ffd04e5 (ur mom)
@@ -26,6 +30,7 @@ for i in range(len(sortData)):
             sortData[j] = temp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 n=0
 while i < len(sortData):
     if n==0:
@@ -34,6 +39,9 @@ while i < len(sortData):
     else:
         adData.append(((float(sortData[i]))-30)*-150+1450)
         n=0
+=======
+
+>>>>>>> parent of ffd04e5 (ur mom)
 =======
 
 >>>>>>> parent of ffd04e5 (ur mom)
