@@ -7,7 +7,7 @@ i=0
 while i< len(d)/1000:
     temp = []
     for j in range(3):
-        temp.append((d[i]))
+        temp.append(float(d[i]))
         i+=1
     sortData.append(temp)
 def sortby(sortData):
