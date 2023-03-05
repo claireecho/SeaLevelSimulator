@@ -57,6 +57,19 @@ nav li a:hover {
 text-decoration: underline;
 }
 
+section {
+background-color: #8fbaff;
+margin-bottom: 90px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+section2 {
+background-color: #8fbaff;
+margin-bottom: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
 
 .slidecontainer {
   width: 100%;
