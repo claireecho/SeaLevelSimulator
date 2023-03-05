@@ -10,6 +10,6 @@ for y in np.arange(36.3206, 39.7175, 0.05):
             'http://localhost:5000/v1/test-dataset?locations='
             + str(y) + "," + str(x))
         z = response.json()['results'][0]['elevation']
-        print(str(x) + ", " + str(y) + ", " + str(z))
-        f.write(str(x) + ", " + str(y) + ", " + str(z) + "\n") 
+        print(str(x) + " " + str(y) + " " + str(z))
+        f.write(str(x) + " " + str(y) + " " + str(z) + "\n") 
     
