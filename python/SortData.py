@@ -10,11 +10,9 @@ while i< len(d)/1000:
         temp.append(float(d[i]))
         i+=1
     sortData.append(temp)
-def sortby(sortData):
-    sortData.sort(key = lambda x: x[2])
-    return sortData
+    
+
 print(sortData)
 
-
-sd.write(str(sortData)+ "\n")
+sd.write(str((Sort(sortData)))+ "\n")
     
