@@ -43,7 +43,7 @@ def plotPoints():
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegreen",
                                  outline="palegreen")
-      elif float(f[u+2])<100:
+      elif float(f[u+2])<600:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
                                  float(f[u])+7,
                                  float(f[u+1])+7, fill="palegoldenrod",
