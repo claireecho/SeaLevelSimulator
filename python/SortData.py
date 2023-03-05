@@ -24,7 +24,9 @@ for i in range(len(sortData)):
 
 # Converting sorted data into appropriate coordinates
 for i in range(len(sortData)):
-    adData.append([(sortData[i][0]+89)*150-1500, (sortData[i][1]-30)*-150+1450, sortData[i][2]])
+    adData.append([(sortData[i][0]+89)*150-1500,
+                   (sortData[i][1]-30)*-150+1450,
+                   sortData[i][2]])
 
 
 # Writing into separate files
