@@ -9,14 +9,12 @@ adData = []
 file = ''
 
 i=0
-#d.remove(",")
 while i< len(d):
     temp = []
     for j in range(3):
         temp.append(float(d[i]))
         i+=1
     sortData.append(temp)
-#print(sortData)
 
 for i in range(len(sortData)):
     for j in range(i, len(sortData)):

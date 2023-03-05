@@ -15,38 +15,38 @@ def plotPoints():
    u=0
    while u < len(f):
       if float(f[u+2]) < 0:
-         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
-                                 float(f[u+1])+7, fill="blue",
+         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+1,
+                                 float(f[u+1])+1, fill="blue",
                                  outline="blue")
       elif float(f[u+2])<50:
-         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegreen4",
+         canvas.create_rectangle(float(f[u]), float(f[u+1]), float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegreen4",
                                  outline="palegreen4")
       elif float(f[u+2])<100:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
-                                 float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegreen3",
+                                 float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegreen3",
                                  outline="palegreen3")
       elif float(f[u+2])<200:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
-                                 float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegreen2",
+                                 float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegreen2",
                                  outline="palegreen2")
          
       elif float(f[u+2])<300:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
-                                 float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegreen1",
+                                 float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegreen1",
                                  outline="palegreen1")
       elif float(f[u+2])<400:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
-                                 float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegreen",
+                                 float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegreen",
                                  outline="palegreen")
-      elif float(f[u+2])<700:
+      elif float(f[u+2])<100:
          canvas.create_rectangle(float(f[u]), float(f[u+1]),
-                                 float(f[u])+7,
-                                 float(f[u+1])+7, fill="palegoldenrod",
+                                 float(f[u])+1,
+                                 float(f[u+1])+1, fill="palegoldenrod",
                                  outline="palegoldenrod")
       u+=3
 plotPoints()
