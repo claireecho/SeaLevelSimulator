@@ -137,3 +137,8 @@ text-decoration: underline;
 navx li a:hover {
 text-decoration: underline;
 }
+
+img.small {
+max-width: 800px;
+width: 90%;
+}
