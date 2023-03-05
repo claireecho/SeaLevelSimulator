@@ -2,6 +2,7 @@ from array import *
 h = open("xyz.txt", "r").read()
 d= h.split()
 sd = open("Sxyz.txt", "w")
+ad = open("Axyz.txt", "w")
 sortData = []
 adData = []
 i=0
@@ -21,13 +22,15 @@ for i in range(len(sortData)):
             sortData[i] = sortData[j]
             sortData[j] = temp
 
-n=0
-while i < len(sortData):
-    if n==0:
-        adData.append(((float(sortData[i]))+89)*150-1500)
-        n=1
-    else:
-        adData.append(((float(sortData[i]))-30)*-150+1450)
-        n=0
 sd.write(str(sortData)+ "\n")
+sd2 = open("Sxyz.txt", "r").read().split()
+
+while i < len(sortData):
+    n=0
+    adData.append(((float(sortData[i][0]))+89)*150-1500)
+    i+=1
+
+        
+ad.write(str(adData) + "\n")
+
     
